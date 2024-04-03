@@ -1,0 +1,38 @@
+{
+    "name": "AutoCaptionBotV2",
+    "keywords": [
+        "Private",
+        "Auto",
+        "Caption",
+        "Bot"
+    ],
+    "env": {
+        "app_id": {
+            "description": "Your APP ID From my.telegram.org",
+            "value": ""
+        },
+        "api_hash": {
+            "description": "Your API Hash From my.telegram.org",
+            "value": ""
+        },
+        "bot_token": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""        
+        },
+        "custom_caption": {
+            "description": "Caption Text",
+            "required": false       
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
